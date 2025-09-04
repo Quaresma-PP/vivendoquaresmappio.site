@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estamos descobrindo o seu Anjo da Guarda</title>
+  <meta name="description" content="Tela de carregamento — Estamos descobrindo o seu Anjo da Guarda" />
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', system-ui, sans-serif; }
+    @keyframes fill {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased" 
+style="background: url('images/banner-fundo.jpg') center/cover no-repeat fixed;">
+   <!-- Background decorativo -->
+    <div class="absolute inset-0 z-0 opacity-[0.06] text-black pointer-events-none">
+      <!-- Ícones decorativos (mesmos paths do original) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[5%] left-[10%] w-24 h-24 -rotate-12">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[15%] right-[5%] w-32 h-32 rotate-6">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[40%] left-[20%] w-20 h-20 rotate-12">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[55%] right-[15%] w-28 h-28 -rotate-6">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute bottom-[10%] left-[5%] w-40 h-40 rotate-15">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute bottom-[2%] right-[25%] w-24 h-24 -rotate-15">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+    </div>
+  <main class="min-h-screen grid place-items-center px-4 py-10">
+    <section class="w-full max-w-md">
+      <div class="mx-auto rounded-2xl bg-white p-8 shadow-xl text-center">
+        <h1 class="text-2xl md:text-3xl font-extrabold text-amber-600 uppercase">
+          Estamos descobrindo o<br/>seu Anjo da Guarda
+        </h1>
+
+        <!-- Barra de progresso -->
+        <div class="mt-6">
+          <div class="relative h-3 w-full rounded-full bg-gray-200 overflow-hidden" >
+            <div id="progress" class="h-3 bg-amber-500 rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <p class="mt-6 text-sm text-gray-500">
+          Aguarde, sua bênção está a caminho...
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const bar = document.getElementById("progress");
+    let progress = 0;
+    const duration = 5000; // 5 segundos
+    const step = 50;       // intervalo em ms
+
+    const timer = setInterval(() => {
+      progress += (step / duration) * 100;
+      if (progress >= 100) {
+        progress = 100;
+        clearInterval(timer);
+        // redireciona quando terminar
+        window.location.href = "https://vivendoquaresmappio.site/sucesso"; 
+      }
+      bar.style.width = progress + "%";
+    }, step);
+  </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revelação — Seu Anjo da Guarda</title>
+  <meta name="description" content="Resultado do quiz — Revelação do Anjo da Guarda" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .cta-stable { backface-visibility:hidden; -webkit-backface-visibility:hidden; transform:translateZ(0); will-change:auto; }
+    @keyframes pulseColors { 0%,100%{background:#fbbf24;} 50%{background:#d97706;} }
+    .animate-pulseColors { animation:pulseColors 4s infinite ease-in-out; }
+  </style>
+  <script>
+    window.onload = () => {
+      const nome = localStorage.getItem("nomeUsuario");
+      if (nome) document.getElementById("mostrarNome").textContent = nome;
+    };
+  </script>
+</head>
+<body class="antialiased bg-[#f3f6f9] text-gray-800"
+      style="background:url('images/banner-fundo.jpg') center/cover no-repeat fixed;">
+
+       <!-- Background decorativo -->
+    <div class="absolute inset-0 z-0 opacity-[0.06] text-black pointer-events-none">
+      <!-- Ícones decorativos (mesmos paths do original) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[5%] left-[10%] w-24 h-24 -rotate-12">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[15%] right-[5%] w-32 h-32 rotate-6">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[40%] left-[20%] w-20 h-20 rotate-12">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[55%] right-[15%] w-28 h-28 -rotate-6">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute bottom-[10%] left-[5%] w-40 h-40 rotate-15">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute bottom-[2%] right-[25%] w-24 h-24 -rotate-15">
+        <path d="M12.5 8.5c-.8-1-2.2-1-3 0"/>
+        <path d="M12.5 15.5c.8 1 2.2 1 3 0"/>
+        <path d="M4.2 19.8c-1.6-1.6-1.6-4.1 0-5.7"/>
+        <path d="M19.8 4.2c1.6 1.6 1.6 4.1 0 5.7"/>
+        <path d="M8.2 5.8A8.4 8.4 0 0 0 12 4.1a8.4 8.4 0 0 0 3.8 1.6"/>
+        <path d="M15.8 18.2a8.4 8.4 0 0 0-3.8 1.6 8.4 8.4 0 0 0-3.8-1.6"/>
+        <path d="M12 4.1V2"/>
+        <path d="M12 22v-2.1"/>
+        <path d="M22 12h-2.1"/>
+        <path d="M4.1 12H2"/>
+        <path d="M12 8.3a4.1 4.1 0 0 0-4.1 4.1 4.1 4.1 0 0 0 4.1 4"/>
+        <path d="M12 12.3a4.1 4.1 0 0 1 4.1 4 4.1 4.1 0 0 1-4.1 4.1"/>
+      </svg>
+    </div>
+
+  <!-- Conteúdo -->
+  <main class="min-h-[100svh] flex items-center justify-center px-3 py-4">
+    <div class="w-full max-w-md">
+      <!-- CARD BRANCO (o botão fica DENTRO daqui) -->
+      <div class="relative z-10 rounded-xl border border-slate-300 bg-white/95 shadow-[0_30px_80px_rgba(0,0,0,0.12)] p-4 sm:p-6 flex flex-col">
+
+        <!-- Título (responsivo com clamp) -->
+        <h1 id="headline"
+            class="text-center font-extrabold uppercase tracking-wide text-amber-600
+                   text-[clamp(1rem,3.8vw,1.375rem)] leading-[1.2]">
+          INCRÍVEL! <span id="mostrarNome"></span>, SEU ANJO DA GUARDA É
+          <span id="headlineName">SÃO MIGUEL ARCANJO</span>!
+        </h1>
+
+        <!-- Imagem (menor no mobile) -->
+        <div class="mt-2 flex justify-center">
+          <div class="relative h-48 w-32 sm:h-72 sm:w-44 overflow-hidden rounded-[999px] shadow-[0_8px_18px_rgba(0,0,0,0.25)] ring-4 ring-amber-400">
+            <img id="angelImg" src="images/c5248a2c-c64b-4ba3-a638-3ba75453962f.png" alt="Imagem do anjo"
+                 class="h-full w-full object-cover" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Nome e descrição (texto responsivo) -->
+        <div class="mt-2 text-center">
+          <p id="angelName" class="font-extrabold text-gray-900 text-[clamp(0.95rem,3.6vw,1.125rem)]">
+            São Miguel Arcanjo
+          </p>
+          <p class="mx-auto mt-2 max-w-md font-semibold text-slate-600
+                    text-[clamp(0.82rem,3.4vw,1rem)] leading-[clamp(1.2rem,4.2vw,1.6rem)]">
+            Líder do exército celestial, seu canto pode realizar milagres financeiros em menos de 24 horas.
+          </p>
+          <p class="mx-auto mt-2 max-w-md font-semibold text-slate-600
+                    text-[clamp(0.82rem,3.4vw,1rem)] leading-[clamp(1.2rem,4.2vw,1.6rem)]">
+            Clique no botão abaixo para ouvir o canto do seu Anjo!
+          </p>
+        </div>
+
+        <!-- CTA DENTRO DO CARD -->
+        <div class="mt-4">
+          <a id="ctaVideo" href="https://vivendoquaresmappio.site/vsl" role="button" aria-label="Ouvir o canto sagrado"
+             class="cta-stable animate-pulseColors inline-flex w-full items-center justify-center gap-3
+                    rounded-lg px-4 py-3 sm:px-6 sm:py-4 text-white font-extrabold shadow-md focus:outline-none select-none">
+            <svg viewBox="0 0 24 24" class="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" aria-hidden="true">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            <span id="ctaText" class="text-center leading-snug text-[clamp(0.9rem,3.6vw,1rem)]">
+              Clique Aqui para Manifestar<br class="hidden sm:block"/> com São Miguel
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function(){
+      const params = new URLSearchParams(window.location.search);
+      const nome = (params.get('anjo') || params.get('nome') || 'São Miguel Arcanjo').trim();
+      const destino = params.get('destino') || 'https://vivendoquaresmappio.site/vsl';
+      const img = params.get('img');
+
+      document.getElementById('headlineName').textContent = nome.toUpperCase();
+      document.getElementById('angelName').textContent = nome;
+
+      // Texto do CTA: "com [Nome]" removendo "Arcanjo" no final se existir
+      const tokens = nome.split(' ').filter(Boolean);
+      const last = tokens[tokens.length - 1]?.toLowerCase() || '';
+      const display = last.includes('arcanjo') ? tokens.slice(0, -1).join(' ') : nome;
+      document.getElementById('ctaText').innerHTML =
+        `Clique Aqui para Manifestar<br class="hidden sm:block"/> com ${display}`;
+
+      document.getElementById('ctaVideo').setAttribute('href', destino);
+      if (img) document.getElementById('angelImg').src = img;
+    })();
+  </script>
+</body>
+</html>
