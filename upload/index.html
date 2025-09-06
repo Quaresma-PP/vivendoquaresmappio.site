@@ -20,6 +20,14 @@
       to { width: 100%; }
     }
   </style>
+
+  <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased" 
 style="background: url('images/banner-fundo.jpg') center/cover no-repeat fixed;">
@@ -150,28 +158,20 @@ style="background: url('images/banner-fundo.jpg') center/cover no-repeat fixed;"
     }, step);
   </script>
 
-  <script>
-// Captura os parâmetros da URL
-const queryString = window.location.search;
-
-if (queryString) {
-  // Pega todos os links internos do site
-  document.querySelectorAll("a").forEach(link => {
-    // Verifica se é um link interno (mesmo domínio ou relativo)
-    if (link.hostname === window.location.hostname || link.hostname === "") {
-      if (link.href.includes("?")) {
-        // Se já tem parâmetros, apenas concatena
-        link.href += "&" + queryString.substring(1);
-      } else {
-        // Se não tem parâmetros, adiciona com "?"
-        link.href += queryString;
-      }
+ <script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
     }
-  });
-}
 </script>
 
 </body>
 </html>
+
 
 
