@@ -18,6 +18,14 @@
     body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
   </style>
 
+  <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
 <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
 <link rel="preload" href="https://scripts.converteai.net/6e76e41a-0a63-4922-b438-85cef361666c/players/68bb4fba2d7746842301ddd7/v4/player.js" as="script">
 <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
@@ -271,25 +279,16 @@
     </main>
   </div>
 
-  <script>
-// Captura os parâmetros da URL
-const queryString = window.location.search;
-
-if (queryString) {
-  // Pega todos os links internos do site
-  document.querySelectorAll("a").forEach(link => {
-    // Verifica se é um link interno (mesmo domínio ou relativo)
-    if (link.hostname === window.location.hostname || link.hostname === "") {
-      if (link.href.includes("?")) {
-        // Se já tem parâmetros, apenas concatena
-        link.href += "&" + queryString.substring(1);
-      } else {
-        // Se não tem parâmetros, adiciona com "?"
-        link.href += queryString;
-      }
+ <script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
     }
-  });
-}
 </script>
 
 
@@ -297,5 +296,6 @@ if (queryString) {
   <!-- <script src="https://cdn.vturb.com/player.js"></script> -->
 </body>
 </html>
+
 
 
